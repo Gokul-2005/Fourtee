@@ -1,7 +1,10 @@
 let winSound = new Audio("win.wav");  
 let loseSound = new Audio("lose.wav");
 let bgm = new Audio("bgm.mp3");
-
+localStorage.setItem("scoreForEndless1",1);
+localStorage.setItem("scoreForTimed1",1);
+localStorage.setItem("theme","theme1");
+localStorage.setItem("sound",true);
 $( function() {
     $( "#startFourte" ).sortable();
   } );
