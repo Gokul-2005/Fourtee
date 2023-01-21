@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  #topDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    color: #e8567c;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  #score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 7%;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  #answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 7%;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  #homeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 7%;
+  }
+  #homeImg {
+    height: 50px;
+    width: 50px;
+  }
+  #wordDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 8%;
+  }
+  .words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 5px 10px 10px #aaaaaa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #timerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    color: #e8567c;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-shadow: 5px 10px 10px #aaaaaa;
+  }
+  #mainDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 12%;
+    margin-top: 12%;
+  }
+  
+  #answerDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    margin-top: 0%;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 5px 10px 10px #aaaaaa;
+  }
+  #levelDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    margin-top: 1.1%;
+    color: #e8567c;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  #start {
+    height: 100%;
+    width: 25%;
+    color: white;
+    border: 0px;
+    font-size: 50px;
+    font-weight: 900;
+    animation: float 2s ease-in-out infinite;
+  }
+ #next{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 10%;
+    color: white;
+    border: 0px;
+    font-size: 50px;
+    font-weight: 900;
+    animation: float 2s ease-in-out infinite;
+    display: none;
+   
+  }
+  #next1{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    border: 0px;
+  }
+  a{
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  #bottomDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+    margin-top: -0.2%;
+  }
+  #numberDiv {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 30%;
+  }
+  #signDiv {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 30%; 
+  }
+  .number {
+    height: 100%;
+    width: 25%;
+    color: white;
+    border: 0px solid white;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .sign {
+    height: 100%;
+    width: 25%;
+    color: white;
+    border: 0px solid white;
+    font-size: 70px;
+    font-weight: 900;
+  }
+  
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+  .classForNumButtonInMainDiv {
+    height: 100%;
+    width: 7%;
+    color: white;
+    border: 0px;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .classForSignButtonInMainDiv {
+    height: 100%;
+    width: 7%;
+    color: white;
+    border: 0px;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .classToMakeDisNone{
+    display: none;
+  }
+  .classToMakeDisBlock{
+    display: block;
+  }
+  .hoverAnime:hover{
+    animation: float 2s ease-in-out infinite;
+  }

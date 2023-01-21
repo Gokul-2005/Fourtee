@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="timed.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="Fourte-removebg-preview.png">
+    <script src="https://kit.fontawesome.com/ea1e76dc8a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourte</title>
+  </head>
+  <body>
+    <div id="topDiv">
+      <div id="score" class="themeForBlue" style="margin-left: 25px;"></div><div id="answer" class="themeForBlue"></div> <a href="starting page.html" id="homeButton" class="themeForPink hoverAnime" style="margin-right: 25px;">
+        <div id="homeButton">
+          <i class="fa-solid fa-house"></i>
+        </div>
+      </a>
+    </div>
+    <div id="wordDiv"><div class="words" style="margin-left: 25px;">POINTS</div><div class="words" style="padding-right:25px ;">MAKE IT!</div><div class="words" style="margin-right: 25px;">HOME</div></div>
+    <div id="timerDiv"><h3 id="counter"></h3></div>
+    <div id="mainDiv"></div>
+    <div id="answerDiv"></div>
+    <div id="levelDiv"><a href=" " id="next"><button id="next1" class="themeForBlue" onclick="createRandomNum()">NEXT</button></a></div>
+    <div id="bottomDiv">
+      <div id="numberDiv">
+        <button id="Randomnumber1" class="number themeForBlue hoverAnime">1</button>
+        <button id="Randomnumber2" class="number themeForBlue hoverAnime">2</button>
+        <button id="Randomnumber3" class="number themeForBlue hoverAnime">3</button>
+        <button id="Randomnumber4" class="number themeForBlue hoverAnime">4</button>
+      </div>
+      <button id="start" class="themeForPink" onclick="createRandomNum()">START</button>
+      <div id="signDiv">
+        <button class="sign themeForPink hoverAnime" id="leftBracket" onclick="insertSignInMainDiv('leftBracket',id)">(</button>
+        <button class="sign themeForPink hoverAnime" id="rightBracket" onclick="insertSignInMainDiv('rightBracket',id)">)</button>
+        <button class="sign themeForPink hoverAnime" id="add" onclick="insertSignInMainDiv('add',id)">+</button>
+        <button class="sign themeForPink hoverAnime" id="sub" onclick="insertSignInMainDiv('sub',id)">-</button>
+        <button class="sign themeForPink hoverAnime" id="multiply" onclick="insertSignInMainDiv('multiply',id)">×</button>
+        <button class="sign themeForPink hoverAnime" id="divide" onclick="insertSignInMainDiv('divide',id)">÷</button>
+        
+      </div>
+    </div>
+    <script src="timed.js"></script>
+  </body>
+</html>
